@@ -1,0 +1,33 @@
+.features-container h2,
+.features-container h3{
+    color:#2e2f42;
+}
+.features-item{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.features-container{
+    margin: auto;
+}
+
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+.features-list-item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.features-list-item{
+    width: calc((100% - 3*24px)/4);
+}
+.features-wrapper {
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4FD;
+    border: 1px solid #8E8F99;
+    border-radius:4px;
+}
