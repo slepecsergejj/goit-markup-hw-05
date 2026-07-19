@@ -43,7 +43,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
     border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: #E7E9FC;
     border-radius: 50%;
