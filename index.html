@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webstudio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
             integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            crossorigin="anonymous" referrerpolicy="no-referrer">
             <link rel="stylesheet" href="./css/main.css">
 </head>
             
@@ -28,7 +29,7 @@
             <li><a class="header-nav-link" href="#portfolio">Portfolio</a></li>
         </ul>
     </nav>
-    <address>
+    <address class="header-address-wrapper">
         <ul class="header-address">
             <li><a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
@@ -119,25 +120,25 @@
                 <div class="team-content"><h3>Tom Ford</h3>
                 <p>Frontend Developer</p>
                     <ul class="social-icons">
-                        <li> <a href="" class="icon">
+                        <li> <a href="#" class="icon">
                             <svg width="16" height="16">
                                 <use href="./images/icons.svg#instagram"></use>
                                 </svg></a>
                     
                         </li>
-                        <li><a href="" class="icon">
+                        <li><a href="#" class="icon">
                             <svg width="16" height="16">
                                     <use href="./images/icons.svg#twitter"></use>
                                 </svg></a>
                     
                         </li>
-                        <li><a href="" class="icon">
+                        <li><a href="#" class="icon">
                             <svg width="16" height="16">
                                     <use href="./images/icons.svg#facebook"
                                     ></use></svg></a>
                     
                         </li>
-                        <li><a href="" class="icon">
+                        <li><a href="#" class="icon">
                             <svg width="16" height="16">
                                     <use href="./images/icons.svg#linkedn"></use>
                                 </svg></a>
@@ -398,13 +399,13 @@
             </div>
         </div>
     
-        <div class="modal-form-wrapper">
+        <div class="modal-form-wrapper comment">
             <label class="modal-form-label" for="comment">Comment</label>
             <textarea class="modal-form-comment" rows="5" name="comment" id="comment" placeholder="Text input"></textarea>
         </div>
     
         <div class="agreement">
-            <input class="agreement-input sr-only" type="checkbox" name="userAgreement" id="userAgreement" />
+            <input class="agreement-input sr-only" type="checkbox" name="userAgreement" id="userAgreement">
             <label class="agreement-label" for="userAgreement">
                 <span class="checkbox-icon">
                     <svg class="checkbox-icon-mark" width="10" height="8">
@@ -416,7 +417,7 @@
                     <a class="agreement-link" 
                     href="#" 
                     target="_blank" 
-                    rel="noopener no-referrer">Privacy Policy</a>
+                    rel="noopener noreferrer">Privacy Policy</a>
                 </span>
             </label>
         </div>

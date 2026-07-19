@@ -45,11 +45,14 @@
     letter-spacing: 0.02em;
     color: #ffffff;
 }
+.social-icons .icon{
+    transition: background-color 
+    250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer-social .social-icons{
     display: flex;
     gap: 16px;
-    transition:
-     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .footer-social .icon:hover,
 .footer-social .icon:focus {
@@ -57,7 +60,7 @@
     color:#f4f4fd;
 }
 .footer-subscribe {
-    margin-left: 80px;
+    margin-left: auto;
     padding: 0;
 }
 
@@ -87,28 +90,29 @@
     outline: none;
     border-radius: 4px;
     border: 1px solid #ffffff;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: border-color
+    250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-email::placeholder {
     color: currentColor;
 }
 .footer-email:focus{
-    border: 1px solid #31D0AA;
+    border-color: #31D0AA;
     
 }
 .subscribe{
     display: flex;
+    gap: 16px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 165px;
     height: 40px;
     background-color: #4D5AE5;
     border-radius: 4px;
     border: none;
     color: #ffffff;
-    transition: background-color
-     250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
     
 }
 .subscribe:hover,
