@@ -29,7 +29,10 @@
     min-height: 584px;
     padding: 72px 24px 24px 24px;
     border-radius: 4px;
-
+    box-shadow:
+    0 1px 1px rgba(0, 0, 0, .14),
+    0 1px 3px rgba(0, 0, 0, .12),
+    0 2px 1px rgba(0, 0, 0, .2);
     background-color: #FCFCFC;
 }
 
@@ -41,7 +44,7 @@
     align-items: center;
     justify-content: center;
     padding: 8px;
-    border:solid 1px #2E2F42;
+    border:solid 1px rgba(46, 47, 66, .1);
     background-color: #E7E9FC;
     border-radius: 50%;
     transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -55,11 +58,11 @@
 .modal-icon-btn {
     fill: #2E2F42;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: stroke;
+    transition-property: fill;
 }
 .modal-btn:hover .modal-icon-btn,
 .modal-btn:focus .modal-icon-btn {
-    stroke: #ffffff;
+    fill: #fff;
 }
 
 .modal-text{
@@ -79,9 +82,7 @@
         letter-spacing: 0.04em;
 }
 
-.modal-form-wrapper {
-    margin-bottom: 8px;
-}
+
 
 .modal-form-label {
     display: block;
@@ -113,7 +114,7 @@
 }
 .modal-form-input:focus + 
 .modal-icon {
-    stroke: #4D5AE5;
+    fill: #4D5AE5;
 }
 .modal-icon {
     position: absolute;
@@ -121,8 +122,12 @@
     left: 16px;
     transform: translateY(-50%);
     fill: #2E2F42;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
 }
-
+.modal-form-wrapper.comment {
+    margin-bottom: 16px;
+}
 .modal-form-comment {
     max-width: 360px;
     width: 100%;
@@ -130,7 +135,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    border: 1px solid #2E2F42;
+    border: 1px solid rgba(46, 47, 66, .4);
     border-radius: 4px;
     padding: 8px 16px;
     resize: none;
@@ -159,15 +164,20 @@
     border: 1px solid rgb(46 47 66/40%);
     cursor: pointer;
     fill: #ffffff;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: border-color, fill;
+    transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .agreement-input:checked + .agreement-label> .checkbox-icon{
     fill:#F4F4FD;
     background-color: #404BBF;
 }
-
+.checkbox-icon-mark{
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .checkbox-agreement {
     font-size: 12px;
     line-height: 1.17;
